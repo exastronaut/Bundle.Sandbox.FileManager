@@ -7,17 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7188AC8290E7425007E20A9 /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7188AC7290E7425007E20A9 /* AuthScreen.swift */; };
+		C7188ACA290E8193007E20A9 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7188AC9290E8193007E20A9 /* UITextField+Extension.swift */; };
+		C7188ACD290E8BCC007E20A9 /* PasswordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7188ACC290E8BCC007E20A9 /* PasswordService.swift */; };
+		C7188ACF290ED8F8007E20A9 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7188ACE290ED8F8007E20A9 /* Credentials.swift */; };
+		C7188AD3290EF2D7007E20A9 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7188AD2290EF2D7007E20A9 /* UIViewController+Extension.swift */; };
+		C7188AD5290EFB32007E20A9 /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7188AD4290EFB32007E20A9 /* SettingsScreen.swift */; };
 		C71CE1AC290AA11500FBF5E4 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71CE1AB290AA11500FBF5E4 /* ImageModel.swift */; };
+		C79288302912B3530027E9E2 /* MainTabBarScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C792882F2912B3530027E9E2 /* MainTabBarScreen.swift */; };
 		C797909328F346E400B554A0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797909228F346E400B554A0 /* UIView+Extension.swift */; };
 		C797909728F3476C00B554A0 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C797909628F3476C00B554A0 /* GalleryCollectionViewCell.swift */; };
 		C7A1851B28F2D8DE00FC16FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1851A28F2D8DE00FC16FD /* AppDelegate.swift */; };
 		C7A1851F28F2D8DE00FC16FD /* GalleryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A1851E28F2D8DE00FC16FD /* GalleryScreen.swift */; };
 		C7A1852428F2D8E000FC16FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7A1852328F2D8E000FC16FD /* Assets.xcassets */; };
 		C7A1852728F2D8E000FC16FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7A1852528F2D8E000FC16FD /* LaunchScreen.storyboard */; };
+		C7FDE6A829154CFE008D1B4B /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDE6A729154CFE008D1B4B /* SettingsService.swift */; };
+		C7FDE6AB291563BF008D1B4B /* ChangePasswordScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDE6AA291563BF008D1B4B /* ChangePasswordScreen.swift */; };
+		C7FDE6AD29157034008D1B4B /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FDE6AC29157034008D1B4B /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7188AC7290E7425007E20A9 /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
+		C7188AC9290E8193007E20A9 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		C7188ACC290E8BCC007E20A9 /* PasswordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordService.swift; sourceTree = "<group>"; };
+		C7188ACE290ED8F8007E20A9 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		C7188AD2290EF2D7007E20A9 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		C7188AD4290EFB32007E20A9 /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
 		C71CE1AB290AA11500FBF5E4 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		C792882F2912B3530027E9E2 /* MainTabBarScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarScreen.swift; sourceTree = "<group>"; };
 		C797909228F346E400B554A0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C797909628F3476C00B554A0 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7A1851728F2D8DE00FC16FD /* Bundle.Sandbox.FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundle.Sandbox.FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +43,9 @@
 		C7A1852328F2D8E000FC16FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7A1852628F2D8E000FC16FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7A1852828F2D8E000FC16FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7FDE6A729154CFE008D1B4B /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		C7FDE6AA291563BF008D1B4B /* ChangePasswordScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordScreen.swift; sourceTree = "<group>"; };
+		C7FDE6AC29157034008D1B4B /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +59,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C7188AC4290E7388007E20A9 /* Auth screen */ = {
+			isa = PBXGroup;
+			children = (
+				C7188AC7290E7425007E20A9 /* AuthScreen.swift */,
+			);
+			path = "Auth screen";
+			sourceTree = "<group>";
+		};
+		C7188AC5290E73A1007E20A9 /* Settings screen */ = {
+			isa = PBXGroup;
+			children = (
+				C7188AD4290EFB32007E20A9 /* SettingsScreen.swift */,
+			);
+			path = "Settings screen";
+			sourceTree = "<group>";
+		};
+		C7188AC6290E73BE007E20A9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C792882E2912B32B0027E9E2 /* MainTabBar Screen */,
+				C7A1853228F2F74F00FC16FD /* Gallery screen */,
+				C7188AC5290E73A1007E20A9 /* Settings screen */,
+				C7188AC4290E7388007E20A9 /* Auth screen */,
+				C7FDE6A92915639A008D1B4B /* ChangePassword screen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C7188ACB290E89E9007E20A9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C7FDE6A629154CCE008D1B4B /* Settings service */,
+				C7188AD0290EDB03007E20A9 /* Password service */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C7188AD0290EDB03007E20A9 /* Password service */ = {
+			isa = PBXGroup;
+			children = (
+				C7188ACC290E8BCC007E20A9 /* PasswordService.swift */,
+				C7188AD1290EDB0D007E20A9 /* Entity */,
+			);
+			path = "Password service";
+			sourceTree = "<group>";
+		};
+		C7188AD1290EDB0D007E20A9 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C7188ACE290ED8F8007E20A9 /* Credentials.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		C71CE1AA290AA0F200FBF5E4 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				C71CE1AB290AA11500FBF5E4 /* ImageModel.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		C792882E2912B32B0027E9E2 /* MainTabBar Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C792882F2912B3530027E9E2 /* MainTabBarScreen.swift */,
+			);
+			path = "MainTabBar Screen";
 			sourceTree = "<group>";
 		};
 		C797909428F3472100B554A0 /* Common */ = {
@@ -102,7 +184,8 @@
 			children = (
 				C7A1853028F2DBD800FC16FD /* App */,
 				C797909428F3472100B554A0 /* Common */,
-				C7A1853228F2F74F00FC16FD /* Gallery screen */,
+				C7188ACB290E89E9007E20A9 /* Service */,
+				C7188AC6290E73BE007E20A9 /* Screens */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -138,8 +221,27 @@
 			isa = PBXGroup;
 			children = (
 				C797909228F346E400B554A0 /* UIView+Extension.swift */,
+				C7188AC9290E8193007E20A9 /* UITextField+Extension.swift */,
+				C7188AD2290EF2D7007E20A9 /* UIViewController+Extension.swift */,
+				C7FDE6AC29157034008D1B4B /* String+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C7FDE6A629154CCE008D1B4B /* Settings service */ = {
+			isa = PBXGroup;
+			children = (
+				C7FDE6A729154CFE008D1B4B /* SettingsService.swift */,
+			);
+			path = "Settings service";
+			sourceTree = "<group>";
+		};
+		C7FDE6A92915639A008D1B4B /* ChangePassword screen */ = {
+			isa = PBXGroup;
+			children = (
+				C7FDE6AA291563BF008D1B4B /* ChangePasswordScreen.swift */,
+			);
+			path = "ChangePassword screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +316,19 @@
 			files = (
 				C797909328F346E400B554A0 /* UIView+Extension.swift in Sources */,
 				C71CE1AC290AA11500FBF5E4 /* ImageModel.swift in Sources */,
+				C7188ACA290E8193007E20A9 /* UITextField+Extension.swift in Sources */,
+				C7188ACF290ED8F8007E20A9 /* Credentials.swift in Sources */,
+				C7188AD3290EF2D7007E20A9 /* UIViewController+Extension.swift in Sources */,
 				C797909728F3476C00B554A0 /* GalleryCollectionViewCell.swift in Sources */,
+				C79288302912B3530027E9E2 /* MainTabBarScreen.swift in Sources */,
 				C7A1851F28F2D8DE00FC16FD /* GalleryScreen.swift in Sources */,
+				C7FDE6A829154CFE008D1B4B /* SettingsService.swift in Sources */,
+				C7188AD5290EFB32007E20A9 /* SettingsScreen.swift in Sources */,
+				C7188ACD290E8BCC007E20A9 /* PasswordService.swift in Sources */,
 				C7A1851B28F2D8DE00FC16FD /* AppDelegate.swift in Sources */,
+				C7FDE6AB291563BF008D1B4B /* ChangePasswordScreen.swift in Sources */,
+				C7FDE6AD29157034008D1B4B /* String+Extension.swift in Sources */,
+				C7188AC8290E7425007E20A9 /* AuthScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

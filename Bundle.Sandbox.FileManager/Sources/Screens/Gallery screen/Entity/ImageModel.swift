@@ -8,7 +8,7 @@
 import UIKit
 
 struct ImageModel {
-
+    var name: String = .emptyline
     var path: String?
     var image: UIImage?
     

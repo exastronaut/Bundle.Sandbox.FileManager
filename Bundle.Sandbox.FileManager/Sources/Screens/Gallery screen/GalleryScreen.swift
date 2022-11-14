@@ -13,9 +13,12 @@ final class GalleryScreen: UIViewController {
 
     // MARK: Variables
 
+    private let settingsService = SettingsService()
     private var deleteImagesPath: Set<String> = []
     private var imagesModel = [ImageModel]()
     private let manager = FileManager.default
+    private var number: Int = .zero
+    private var savedSortParameter: Bool?
 
     // MARK: UI
 
@@ -53,6 +56,12 @@ final class GalleryScreen: UIViewController {
         showImages()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        sortImage()
+    }
+
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
 
@@ -80,13 +89,28 @@ private extension GalleryScreen {
             let contents = try manager.contentsOfDirectory(at: .documentsDirectory, includingPropertiesForKeys: nil)
             for content in contents {
                 if let image = UIImage(contentsOfFile: content.relativePath) {
-                    imagesModel.append(ImageModel(path: content.relativePath, image: image))
+                    imagesModel.append(ImageModel(name: "image \(number)", path: content.relativePath, image: image))
+                    number += 1
                 }
             }
-            collectionView.reloadData()
         } catch let error {
             debugPrint(error.localizedDescription)
         }
+    }
+
+    func sortImage() {
+        guard let sortParameter = settingsService.getSortParameter(),
+              savedSortParameter != sortParameter
+        else { return }
+
+        if sortParameter {
+            imagesModel.sort { $0.name < $1.name }
+        } else {
+            imagesModel.sort { $0.name > $1.name }
+        }
+
+        collectionView.reloadData()
+        savedSortParameter = sortParameter
     }
 
     func setupView() {
@@ -146,7 +170,17 @@ extension GalleryScreen: UIImagePickerControllerDelegate {
         else { return }
 
         manager.createFile(atPath: imagePath.relativePath, contents: jpegData)
-        imagesModel.append(ImageModel(path: imagePath.relativePath, image: image))
+
+        if let sortParameter = settingsService.getSortParameter(), sortParameter {
+            imagesModel.append(ImageModel(name: "image \(number)", path: imagePath.relativePath, image: image))
+        } else {
+            imagesModel.insert(
+                ImageModel(name: "image \(number)", path: imagePath.relativePath, image: image),
+                at: .zero
+            )
+        }
+
+        number += 1
         collectionView.reloadData()
         dismiss(animated: true)
     }
